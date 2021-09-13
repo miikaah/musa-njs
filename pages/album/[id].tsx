@@ -31,8 +31,6 @@ const Album = ({ album }: Props) => {
   const { coverUrl, metadata } = album;
   const { album: name, artist, genre, year } = metadata;
 
-  console.log(album);
-
   return (
     <>
       <div>
