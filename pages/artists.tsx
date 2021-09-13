@@ -1,6 +1,9 @@
+import Link from "next/link";
+
 const { FRONT_API_URL: baseUrl } = process.env;
 
 type Artist = {
+  id: string;
   name: string;
   url: string;
 };
@@ -21,10 +24,11 @@ const Artists = ({ artistObject }: Props) => {
           <div key={label}>
             <div>{label}</div>
             <div>
-              {artists.map(({ name, url }) => {
+              {artists.map(({ id, name }) => {
                 return (
-                  <div key={url}>
-                    <a href={url}>{name}</a>
+                  <div key={id}>
+                    <span>{name}</span>
+                    <Link href={`/artist/${id}`}>{">"}</Link>
                   </div>
                 );
               })}
