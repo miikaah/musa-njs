@@ -21,8 +21,6 @@ type Props = {
 const Artist = ({ artist }: Props) => {
   const { name } = artist;
 
-  console.log(artist);
-
   return (
     <>
       <div>{name}</div>
