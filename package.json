@@ -6,17 +6,24 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "tsc:w": "tsc --watch --noEmit"
   },
   "dependencies": {
     "next": "11.1.2",
+    "node-fetch": "^3.0.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "sass": "^1.39.2"
   },
   "devDependencies": {
+    "@types/node-fetch": "^3.0.3",
     "@types/react": "17.0.20",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.0",
     "typescript": "4.4.3"
   }
 }
